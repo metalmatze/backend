@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/envelope-zero/backend/internal/routing"
+	"github.com/envelope-zero/backend/internal/controllers"
 	"github.com/gin-gonic/gin"
 )
 
@@ -15,6 +15,6 @@ func main() {
 		gin.SetMode("release")
 	}
 
-	r := routing.Router()
+	r := controllers.Router()
 	r.Run()
 }
